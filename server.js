@@ -24,11 +24,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/budget",
     useFindAndModify: false,
     useUnifiedTopology: true
   });
-// mongoose.connect("mongodb://user:NaomiMacD93*@ds149335.mlab.com:49335/heroku_v9wwhw86", {
-//   useNewUrlParser: true,
-//   useFindAndModify: false,
-//   useUnifiedTopology: true
-// });
+
 
 // routes
 app.use(require("./routes/api.js"));
