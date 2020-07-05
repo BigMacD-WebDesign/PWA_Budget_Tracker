@@ -1,4 +1,4 @@
-
+//Begin Requirements
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
@@ -15,6 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
+//End Requirements
 
 //MongoDB connection to Heroku
 mongoose.connect("mongodb://user:NaomiMacD93*@ds149335.mlab.com:49335/heroku_v9wwhw86", {
