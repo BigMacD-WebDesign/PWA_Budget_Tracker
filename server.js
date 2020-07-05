@@ -1,3 +1,4 @@
+
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
@@ -15,6 +16,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+//MongoDB connection to Heroku
 mongoose.connect("mongodb://user:NaomiMacD93*@ds149335.mlab.com:49335/heroku_v9wwhw86", {
   useNewUrlParser: true,
   useFindAndModify: false,
