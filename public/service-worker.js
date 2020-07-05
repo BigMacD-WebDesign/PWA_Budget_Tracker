@@ -1,8 +1,13 @@
+caches.keys().then(function(names) {
+    for (let name of names)
+        caches.delete(name);
+});
+
 const FILES_TO_CACHE = [
     "/",
     "/index.html",
     "/manifest.webmanifest",
-    "/style.css",
+    "/styles.css",
     "/icons/icon-192x192.png",
     "/icons/icon-512x512.png"
 ];
