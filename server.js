@@ -18,7 +18,7 @@ app.use(express.static("public"));
 //End Requirements
 
 //MongoDB connection to Heroku
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/workout",
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/budget",
   {
     useNewUrlParser: true,
     useFindAndModify: false,
